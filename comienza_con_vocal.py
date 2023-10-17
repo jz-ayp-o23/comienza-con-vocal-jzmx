@@ -1,15 +1,19 @@
 """
-Inserta el encabezado aquí y escribe tu código abajo
+Comienza con vocal
 """
 
 # Declaraciones
-CONSTANTE = valor
+VOCALES = "aeiouáéíóúü"
 
 # Entradas
-entrada = input()
+palabra = input("Escribe una palabra: ")
 
 # Proceso
-
+if palabra[0].lower() in VOCALES:
+    comienza = "comienza"
+else:
+    comienza = "no comienza"
+salida = f"'{palabra}' {comienza} con vocal"
 
 # Salidas
 print(salida)
